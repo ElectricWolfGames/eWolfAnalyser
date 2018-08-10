@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/eWolfAnalyser
+/eWolfCodeAnalyser/eWolfCodeAnalyser/obj
+/eWolfCodeAnalyser/eWolfCodeAnalyser.Test/obj
+/eWolfCodeAnalyser/eWolfCodeAnalyser.Vsix/obj/Debug
