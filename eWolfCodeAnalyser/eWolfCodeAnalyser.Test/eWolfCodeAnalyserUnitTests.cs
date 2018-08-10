@@ -1,17 +1,15 @@
+using FluentAssertions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.Diagnostics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using NUnit.Framework;
 using TestHelper;
-using eWolfCodeAnalyser;
 
 namespace eWolfCodeAnalyser.Test
 {
-    [TestClass]
     public class UnitTest : CodeFixVerifier
     {
-        [TestMethod]
+        [Test]
         public void ShoulNotReportAnyRegions()
         {
             var test = @"// comment region
@@ -20,7 +18,7 @@ namespace eWolfCodeAnalyser.Test
             VerifyCSharpDiagnostic(test);
         }
 
-        [TestMethod]
+        [Test]
         public void ShouldReportRegionAndEndRegion()
         {
             var test = @"
@@ -66,8 +64,8 @@ namespace ConsoleApplication1
 
             string results = VerifyCSharpFix(test);
 
-            Assert.AreEqual(false, results.Contains("#region"));
-            Assert.AreEqual(false, results.Contains("#endregion"));
+            results.Contains("#region").Should().Be(false);
+            results.Contains("#endregion").Should().Be(false);
         }
 
         protected override CodeFixProvider GetCSharpCodeFixProvider()
