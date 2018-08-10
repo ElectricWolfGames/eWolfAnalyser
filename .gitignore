@@ -6,3 +6,6 @@
 /eWolfCodeAnalyser/eWolfCodeAnalyser/obj
 /eWolfCodeAnalyser/eWolfCodeAnalyser.Test/obj
 /eWolfCodeAnalyser/eWolfCodeAnalyser.Vsix/obj/Debug
+/eWolfCodeAnalyser/eWolfCodeAnalyser/bin/Debug
+/eWolfCodeAnalyser/eWolfCodeAnalyser.Test/bin/Debug/netcoreapp2.0
+/eWolfCodeAnalyser/eWolfCodeAnalyser.Vsix/bin/Debug
