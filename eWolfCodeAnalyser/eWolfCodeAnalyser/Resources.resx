@@ -117,16 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AnalyzerDescription" xml:space="preserve">
-    <value>Remove Regions a</value>
+  <data name="AnalyerOneClassMessageFormat" xml:space="preserve">
+    <value>Should only have one class per file</value>
+    <comment>The format-able message the diagnostic displays.</comment>
+  </data>
+  <data name="AnalyerOneClassTitle" xml:space="preserve">
+    <value>One Class per File</value>
+    <comment>The title of the diagnostic.</comment>
+  </data>
+  <data name="AnalyzerOneClassDescription" xml:space="preserve">
+    <value>One ClassOne File</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
   </data>
-  <data name="AnalyzerMessageFormat" xml:space="preserve">
+  <data name="AnalyzerRegionsDescription" xml:space="preserve">
+    <value>Remove Regions</value>
+    <comment>An optional longer localizable description of the diagnostic.</comment>
+  </data>
+  <data name="AnalyzerRegionsMessageFormat" xml:space="preserve">
     <value>Regions are not needed any more</value>
     <comment>The format-able message the diagnostic displays.</comment>
   </data>
-  <data name="AnalyzerTitle" xml:space="preserve">
-    <value>Remove Regions c</value>
+  <data name="AnalyzerRegionsTitle" xml:space="preserve">
+    <value>Remove Regions</value>
     <comment>The title of the diagnostic.</comment>
   </data>
 </root>

@@ -62,29 +62,56 @@ namespace eWolfCodeAnalyser {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove Regions a.
+        ///   Looks up a localized string similar to Should only have one class per file.
         /// </summary>
-        internal static string AnalyzerDescription {
+        internal static string AnalyerOneClassMessageFormat {
             get {
-                return ResourceManager.GetString("AnalyzerDescription", resourceCulture);
+                return ResourceManager.GetString("AnalyerOneClassMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One Class per File.
+        /// </summary>
+        internal static string AnalyerOneClassTitle {
+            get {
+                return ResourceManager.GetString("AnalyerOneClassTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One ClassOne File.
+        /// </summary>
+        internal static string AnalyzerOneClassDescription {
+            get {
+                return ResourceManager.GetString("AnalyzerOneClassDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Regions.
+        /// </summary>
+        internal static string AnalyzerRegionsDescription {
+            get {
+                return ResourceManager.GetString("AnalyzerRegionsDescription", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Regions are not needed any more.
         /// </summary>
-        internal static string AnalyzerMessageFormat {
+        internal static string AnalyzerRegionsMessageFormat {
             get {
-                return ResourceManager.GetString("AnalyzerMessageFormat", resourceCulture);
+                return ResourceManager.GetString("AnalyzerRegionsMessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove Regions c.
+        ///   Looks up a localized string similar to Remove Regions.
         /// </summary>
-        internal static string AnalyzerTitle {
+        internal static string AnalyzerRegionsTitle {
             get {
-                return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
+                return ResourceManager.GetString("AnalyzerRegionsTitle", resourceCulture);
             }
         }
     }
