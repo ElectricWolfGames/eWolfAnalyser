@@ -2,14 +2,15 @@ using FluentAssertions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.Diagnostics;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestHelper;
 
 namespace eWolfCodeAnalyser.Test
 {
+    [TestClass]
     public class UnitTest : CodeFixVerifier
     {
-        [Test]
+        [TestMethod]
         public void ShoulNotReportAnyRegions()
         {
             var test = @"// comment region
@@ -18,7 +19,7 @@ namespace eWolfCodeAnalyser.Test
             VerifyCSharpDiagnostic(test);
         }
 
-        [Test]
+        [TestMethod]
         public void ShouldReportRegionAndEndRegion()
         {
             var test = @"
