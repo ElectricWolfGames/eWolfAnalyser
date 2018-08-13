@@ -8,7 +8,7 @@ using TestHelper;
 namespace eWolfCodeAnalyser.Test
 {
     [TestClass]
-    public class UnitTest : CodeFixVerifier
+    public class RemoveRegionsAnalyzerTests : CodeFixVerifier
     {
         [TestMethod]
         public void ShoulNotReportAnyRegions()
